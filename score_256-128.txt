@@ -1,0 +1,9 @@
+Episode 100	Average Score: 0.00 	best_score 0.0	 Elapsed Time:49sec
+Episode 200	Average Score: 0.00 	best_score 0.0	 Elapsed Time:106sec
+Episode 300	Average Score: 0.00 	best_score 0.10000000149011612	 Elapsed Time:167sec
+Episode 400	Average Score: 0.02 	best_score 0.10000000149011612	 Elapsed Time:247sec
+Episode 500	Average Score: 0.08 	best_score 0.6000000089406967	 Elapsed Time:385secc
+Episode 598	Average Score: 0.50 	best_score 2.600000038743019	 Elapsed Time:1189sec
+Environment solved in 598 episodes!	Average Score: 0.50
+
+Enviroment is solved in {} sec 1189
