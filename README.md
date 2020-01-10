@@ -36,6 +36,20 @@ The environment is considered solved, when the average (over 100 episodes) of th
     (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux_NoVis.zip) to obtain the "headless" version of the environment.  You will **not** be able to watch the agent without enabling a virtual screen, but you will be able to train the agent.  (_To watch the agent, you should follow the instructions to [enable a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md), and then download the environment for the **Linux** operating system above._)
 
 2. Place the file in the DRLND GitHub repository, in the `p3_collab-compet/` folder, and unzip (or decompress) the file. 
+3. This project is created with Jupyter Notebook with these packages.
+
+        Python	3.6.9 64bit [MSC v.1915 64 bit (AMD64)]
+        IPython	7.10.1
+        OS	Windows 10 10.0.16299 SP0
+        numpy	1.17.4
+        unityagents	(bleach 3.1.0 (c:\users\26003800\appdata\local\continuum\anaconda3\envs\myenv\lib\site-packages), Requirement.parse('bleach==1.5.0'), {'tensorboard'})
+        torch	1.3.1
+        matplotlib	3.1.2
+        pandas	0.25.3
+        gym	0.15.4
+        tensorflow	1.7.1
+There is an important point which that torch is not working with python 3.7 so it is important to create enviroment with python 3.6.
+    If it is already downloaded Anaconda with Python 3.7 create a new enviroment with python 3.6 and use it as active enviroment.(Further information could be found: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 
 ### Instructions
 
