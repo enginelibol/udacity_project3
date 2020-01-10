@@ -13,6 +13,15 @@ from replay_buffer import ReplayBuffer
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
+BUFFER_SIZE=int(1e6)
+BATCH_SIZE=128
+GAMMA=0.99     
+TAU=1e-3
+LR_ACTOR=1e-4     
+LR_CRITIC=1e-3      
+WEIGHT_DECAY=0
+RANDOM_SEED=0
+
 class Agent():
     """Interacts with and learns from the environment."""
     
@@ -21,14 +30,14 @@ class Agent():
         state_size=None,        # state space size
         action_size=None,       # action size
         memory=None,
-        buffer_size=int(1e6),   # replay buffer size
-        batch_size=128,         # minibatch size
-        gamma=0.99,             # discount factor
-        tau=1e-3,               # for soft update of target parameters
-        lr_actor=1e-4,          # learning rate of the actor 
-        lr_critic=1e-3,         # learning rate of the critic
-        weight_decay=0,         # L2 weight decay
-        random_seed=0
+        buffer_size=BUFFER_SIZE,   # replay buffer size
+        batch_size=BATCH_SIZE,         # minibatch size
+        gamma=GAMMA,             # discount factor
+        tau=TAU,               # for soft update of target parameters
+        lr_actor=LR_ACTOR,          # learning rate of the actor 
+        lr_critic=LR_CRITIC,         # learning rate of the critic
+        weight_decay=WEIGHT_DECAY,         # L2 weight decay
+        random_seed=RANDOM_SEED
     ):
         self.state_size = state_size
         self.action_size = action_size
